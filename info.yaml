@@ -5,7 +5,7 @@ project:
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "An 8-bit processor featuring eight general-purpose registers, eight ALU operations, instruction decoding, program control, and LOAD/STORE data memory."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     41666667       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 340x160 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
@@ -26,8 +26,7 @@ project:
     - "program_counter.v"
     - "register_8bit.v"
     - "register_file.v"
-    - "tb/instruction_memory.v"
-    - "tt_um_cpu_8bit.v"
+    - "tt_um_nouranelbana_cpu.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).

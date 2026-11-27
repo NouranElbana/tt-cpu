@@ -93,7 +93,7 @@ data_memory dm_inst (
     .clk(clk),
     .reset(reset),
     .write_data(read_data1),
-    .address(current_instruction[8:5]),
+    .address(current_instruction[7:5]),
     .read_data(memory_read_data)
 );
 
